@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="game.js"></script>
+        <style>
+            .choices{
+
+                height: 200px;
+                width: auto;
+                padding: 10px;
+                border-radius: 25px;
+            }
+
+            .choices:hover{
+                background-color: grey;
+            }
+        </style>        
     </head>
+
+    <body>
+        <h1 style="padding: 20px;">Rock, Paper, Scissors!</h1>
+        <div id="gamescreen">
+            <img class="choices" src="960x0.jpg" id="rock">
+            <img class="choices" src="super-mario-switch-remasters-new-paper-mario-details.jpg" id="paper">
+            <img class="choices" src="2212-Shiny-Scizor.png" id="scissors">
+        </div><br>
+        <label id="status" style="padding: 20px">Status: game has not started</label><br>
+        <label id="scoreboard" style="padding: 20px;">Player score: 0  Computer score: 0</label>
+
+
+        <script src="game.js"></script>
+    </body>
 </html>
